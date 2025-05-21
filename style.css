@@ -42,7 +42,7 @@ body {
   width: 100%;
   border-bottom-left-radius: 0.625rem;
   border-bottom-right-radius: 0.625rem;
-  background-color: white;
+  background-color: hsl(0, 0%, 100%);
   padding: 1.5rem;
 }
 .product__type {
@@ -91,7 +91,7 @@ body {
   cursor: pointer;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .product {
     max-width: 70%;
     display: flex;
@@ -111,7 +111,7 @@ body {
     border-top-right-radius: 0.625rem;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 90rem) {
   .product {
     max-width: 50%;
   }

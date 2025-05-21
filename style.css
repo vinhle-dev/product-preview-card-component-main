@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font: 500 1rem "Montserrat", sans-serif;
+  font-size: clamp(14px, 2vw, 18px);
+  color: hsl(228, 12%, 48%);
+}
+
+body {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(30, 38%, 92%);
+}
+
+.product {
+  margin: auto;
+  max-width: 90%;
+}
+.product__image {
+  width: 100%;
+}
+.product__image img {
+  display: block;
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  object-position: top;
+  border-top-left-radius: 0.625rem;
+  border-top-right-radius: 0.625rem;
+}
+.product__details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  border-bottom-left-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
+  background-color: white;
+  padding: 1.5rem;
+}
+.product__type {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+.product__name {
+  font: 700 2rem "Fraunces", serif;
+  color: hsl(212, 21%, 14%);
+}
+.product__description {
+  line-height: 1.5rem;
+}
+.product__price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.product__price--current {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: hsl(158, 36%, 37%);
+}
+.product__price--original {
+  text-decoration: line-through;
+}
+.product__button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  border: 1px solid hsl(158, 36%, 37%);
+  box-shadow: none;
+}
+.product__button:hover {
+  background-color: hsl(158, 42%, 18%);
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .product {
+    max-width: 70%;
+    display: flex;
+  }
+  .product__image {
+    width: 50%;
+  }
+  .product__image img {
+    height: 100%;
+    max-height: 100%;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0.625rem;
+  }
+  .product__details {
+    width: 50%;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0.625rem;
+  }
+}
+@media (min-width: 1440px) {
+  .product {
+    max-width: 50%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
